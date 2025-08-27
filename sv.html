@@ -5,137 +5,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
-    <!--Load Bootstrap 5.3-->
+    <!--Ladda Bootstrap 5.3-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <!--Custom CSS-->
+    <!--Egen CSS-->
     <link href="static/css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container py-4">
-        <!--Headline-->
+        <!--Rubrik-->
         <section class="headline mb-4">
-            <h1>CV</h1>
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="mb-0">CV</h1>
+                <div>
+                    <a href="index.html" class="mb-0 me-2">English</a>
+                    <span class="mx-2">|</span>
+                    <a href="sv.html" class="ms-2"><strong>Svenska</strong></a>
+                </div>
+            </div>
             <hr>
         </section>
         <div class="page-container">
             <div class="row">
-                <!-- Profile Picture -->
+                <!-- Profilbild -->
                 <section class="col-12 col-md-4 profile-column d-flex justify-content-center align-items-center mb-4">
-                    <img src="static/img/profile.jpg" alt="Profile image of Patrik" class="profile-pic" />
+                    <img src="static/img/profile.jpg" alt="Profilbild på Patrik" class="profile-pic" />
                 </section>
 
-                <!-- Introduction -->
+                <!-- Introduktion -->
                 <section class="col-12 col-md-8 order-md-first intro mb-4">
                     <h1>Patrik Lundström</h1>
-                    <p class="lead"></p>
+                    <p class="lead">Mångsidig yrkesperson som gör karriärbyte till IT med en stark bakgrund inom affärsutveckling, rekrytering och verksamhetsstyrning i internationella och krävande miljöer. Har nyligen avslutat en intensivutbildning inom Full-Stack Webbutveckling
+                        på Code Institute, som kompletterar en kandidatexamen i företagsekonomi och IT. Känd för samarbete över funktioner, strategiskt tänkande och förmåga att leverera resultat i konkurrensutsatta marknader. Brinner för att skapa digitala
+                        lösningar som möter användarnas behov och affärsmålen.</p>
+                    <!-- Knapp för kontaktuppgifter -->
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#contactModal">
+                        Kontaktuppgifter
+                    </button>
                 </section>
             </div>
             <div class="row">
-                <!-- Skills -->
+                <!-- Kompetenser -->
                 <section class="col-12 col-md-5 mb-4">
-                    <h2>Skills</h2>
+                    <h2>Kompetenser</h2>
                     <ul class="list-unstyled">
                         <li>HTML5, CSS3, JavaScript, Python, SQL</li>
                         <li>Bootstrap 5</li>
                         <li>Django</li>
                         <li>Amazon S3, Cloudinary</li>
-                        <li>Responsive design & accessibility</li>
-                        <li>Version control (Git)</li>
-                        <li>Understanding both tech and business</li>
+                        <li>Responsiv design & tillgänglighet</li>
+                        <li>Versionshantering (Git)</li>
+                        <li>Förståelse för både IT och affärssidan</li>
                     </ul>
                 </section>
 
-                <!-- Education -->
+                <!-- Utbildning -->
                 <section class="col-12 col-md-5 offset-md-2 mb-4">
-                    <h2>Education</h2>
+                    <h2>Utbildning</h2>
                     <div>
-                        <p><strong>Full-Stack Web Development Diploma</strong>, Code Institute Ireland 2025</p>
+                        <p><strong>Diplom Full-Stack Webbutveckling</strong>, Code Institute Irland 2025</p>
                     </div>
                     <div>
-                        <p><strong>Bachelor's Degree in Business & Information Technology</strong>, Malmö University, 2012-2015</p>
+                        <p><strong>Kandidatexamen i Företagsekonomi & IT</strong>, Malmö universitet, 2012-2015</p>
                     </div>
                     <div>
-                        <p><strong>Additional Courses:</strong></p>
+                        <p><strong>Kompletterande kurser:</strong></p>
                         <ul>
-                            <li>Programming (C#, Java, JavaScript, SQL), Lund University LTH</li>
-                            <li>Leadership & International Business, Lund University</li>
-                            <li>Business Law, IP Law, Lund University</li>
+                            <li>Programmering (C#, Java, JavaScript, SQL), Lunds universitet LTH</li>
+                            <li>Ledarskap & internationell affärsverksamhet, Lunds universitet</li>
+                            <li>Företagsrätt, Immaterialrätt, Lunds universitet</li>
                         </ul>
                     </div>
-
                 </section>
             </div>
             <div class="row">
-                <!-- Experience -->
+                <!-- Erfarenhet -->
                 <section class="col-12 col-md-5 mb-4">
-                    <h2>Experience</h2>
+                    <h2>Erfarenhet</h2>
                     <div>
-                        <h5>Business Area Manager / Consultant Manager <small class="text-muted"> - Vårdbron Sverige AB, Stockholm (2020-2025)</small></h5>
+                        <h5>Business Area Manager / Konsultchef <small class="text-muted"> - Vårdbron Sverige AB, Stockholm (2020-2025)</small></h5>
                         <ul>
-                            <li>Managed recruitment and staffing of personnel across Sweden</li>
-                            <li>Led the full recruitment process: screening, referencing, contracting</li>
-                            <li>Built and maintained long-term relationships with clients in both public and private sector</li>
-                            <li>Oversaw subcontractors and partnership agreements</li>
-                            <li>Managed internal CRM system and recruitment tools (Adocka, Mailchimp, Hubspot)</li>
+                            <li>Ansvarade för rekrytering och personal inom hela Sverige</li>
+                            <li>Ledde hela rekryteringsprocessen: urval, referenser, kontrakt</li>
+                            <li>Byggde och underhöll långsiktiga kundrelationer inom offentlig och privat sektor</li>
+                            <li>Ansvarade för underleverantörer och partneravtal</li>
+                            <li>Skötte interna CRM-system och rekryteringsverktyg (Adocka, Mailchimp, TeamTailor, Hubspot)</li>
                         </ul>
                     </div>
                     <div>
-                        <h5>Consultant Manager <small class="text-muted"> - Sverek Läkarbemanning AB, Stockholm (2018-2020)</small></h5>
+                        <h5>Konsultchef <small class="text-muted"> - Sverek Läkarbemanning AB, Stockholm (2018-2020)</small></h5>
                         <ul>
-                            <li>Specialized in matching medical consultants to suitable assignments</li>
-                            <li>Developed and sustained strong client relations across regions and municipalities</li>
-                            <li>Supervised consultants during active placements</li>
-                            <li>Used Salesforce and Adocka for talent pipeline and project coordination</li>
+                            <li>Specialiserad på att matcha medicinska konsulter med lämpliga uppdrag</li>
+                            <li>Utvecklade och upprätthöll starka kundrelationer över regioner och privata aktörer</li>
+                            <li>Handledde konsulter under pågående uppdrag</li>
+                            <li>Använde Salesforce och Adocka för talent pipeline och projektkoordinering</li>
                         </ul>
                     </div>
                     <div>
-                        <h5>Account Manager <small class="text-muted"> - MeteoGroup, Philippines (2017-2018)</small></h5>
+                        <h5>Account Manager <small class="text-muted"> - MeteoGroup, Filippinerna (2017-2018)</small></h5>
                         <ul>
-                            <li>Handled key accounts and upsold tailored weather data products</li>
-                            <li>Managed CRM workflows through Salesforce</li>
+                            <li>Hanterade nyckelkunder och merförsäljning av skräddarsydda vädertjänster</li>
+                            <li>Skötte CRM-flöden via Salesforce</li>
                         </ul>
                     </div>
                     <div>
-                        <h5>Business Development Manager <small class="text-muted"> - FlySpaces, Philippines (2016-2017)</small></h5>
+                        <h5>Business Development Manager <small class="text-muted"> - FlySpaces, Filippinerna (2016-2017)</small></h5>
                         <ul>
-                            <li>Expanded operations across Southeast Asia</li>
-                            <li>Secured office space listings and matched with client needs</li>
-                            <li>Built partnerships, negotiated contracts, and managed customer accounts</li>
+                            <li>Utvidgade verksamheten i Sydostasien</li>
+                            <li>Säkrade kontorslistningar och matchade kundbehov</li>
+                            <li>Byggde partnerskap, förhandlade kontrakt och hanterade kundkonton</li>
                         </ul>
                     </div>
                 </section>
 
-                <!-- Projects -->
+                <!-- Projekt -->
                 <section class="col-12 col-md-5 offset-md-2 mb-4">
-                    <h2>Projects and Other Experience</h2>
+                    <h2>Projekt och övriga erfarenheter</h2>
                     <div>
-                        <p><strong>Projects Portfolio</strong></p>
+                        <p><strong>Projektportfölj</strong></p>
                         <ul>
-                            <li><a href="https://patriklundstrom91.github.io/pat-tech-consultants/" target="_blank" aria-label="Link to project Pat-Tech-Consultants">Pat-Tech-Consultants</a></li>
-                            <li><a href="https://patriklundstrom91.github.io/visit-stockholm/" target="_blank" aria-label="Link to project Visit-Stockholm">Visit-Stockholm</a></li>
-                            <li><a href="https://trip-tips-b37d3fb90f1a.herokuapp.com/" target="_blank" aria-label="Link to project Trip-Tips">Trip-Tips</a></li>
-                            <li><a href="https://little-shop-e7360dae3788.herokuapp.com/" target="_blank" aria-label="Link to project Little-Shop">Little-Shop</a></li>
+                            <li><a href="https://patriklundstrom91.github.io/pat-tech-consultants/" target="_blank" aria-label="Länk till projekt Pat-Tech-Consultants">Pat-Tech-Consultants</a></li>
+                            <li><a href="https://patriklundstrom91.github.io/visit-stockholm/" target="_blank" aria-label="Länk till projekt Visit-Stockholm">Visit-Stockholm</a></li>
+                            <li><a href="https://trip-tips-b37d3fb90f1a.herokuapp.com/" target="_blank" aria-label="Länk till projekt Trip-Tips">Trip-Tips</a></li>
+                            <li><a href="https://little-shop-e7360dae3788.herokuapp.com/" target="_blank" aria-label="Länk till projekt Little-Shop">Little-Shop</a></li>
                         </ul>
-                        <p>Link to <a href="https://github.com/patriklundstrom91" target="_blank" aria-label="Link to Patriks Github"><strong>GitHub</strong></a></p>
+                        <p>Länk till <a href="https://github.com/patriklundstrom91" target="_blank" aria-label="Länk till Patriks Github"><strong>GitHub</strong></a></p>
                     </div>
                     <div>
-                        <p><strong>Founder - Hyrnet Sweden</strong>, Market research, web development (HTML, PHP, JS), business planning</p>
+                        <p><strong>Grundare - Hyrnet Sweden</strong>, Marknadsundersökning, webbutveckling (HTML, PHP, JS), affärsplanering</p>
                     </div>
                     <div>
-                        <p><strong>Head of Finance - Master Committee, LundaEkonomerna</strong>, Budget planning, event coordination, committee leadership</p>
+                        <p><strong>Ekonomiansvarig - Masterkommittén, LundaEkonomerna</strong>, Budgetplanering, eventkoordinering, kommittéledning</p>
                     </div>
                     <div>
-                        <p><strong>International Exposure during School:</strong></p>
+                        <p><strong>Internationell erfarenhet under studier:</strong></p>
                         <ul>
                             <li>Cultural Kaleidoscope (Malaysia, 2008)</li>
                             <li>MI. World International Conference (Singapore, 2010)</li>
                         </ul>
                     </div>
-
                 </section>
             </div>
-
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Kontaktuppgifter</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Stäng"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Namn: Patrik Lundström</p>
+                        <p>Plats: Stockholm</p>
+                        <p>Telefon: +46706474325</p>
+                        <p>E-post: <a href="mailto:patriklundstrom91@gmail.com" aria-label="Skicka e-post till patriklundstrom91@gmail.com">patriklundstrom91@gmail.com</a></p>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/patrik-lundstr%C3%B6m/" target="_blank" aria-label="Länk till Patriks LinkedIn-sida">https://www.linkedin.com/in/patrik-lundström</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
